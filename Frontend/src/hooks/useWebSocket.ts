@@ -34,7 +34,7 @@ export function useWebSocket(userId: string) {
 
     const connectWebSocket = () => {
       websocket = new WebSocket(
-        `ws://localhost:5000/ws/${userId}`
+        `wss://task-6-real-time-ui-production.up.railway.app/ws/${userId}`
       );
 
       websocket.onopen = () => {

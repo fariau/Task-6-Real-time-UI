@@ -58,7 +58,7 @@ export default function NotificationPanel({
 
     try {
       const response = await fetch(
-        `http://localhost:5000/send-notification?${params.toString()}`,
+        `https://task-6-real-time-ui-production.up.railway.app/send-notification?${params.toString()}`,
         {
           method: 'POST',
         }
